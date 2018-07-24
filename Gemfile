@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'omniauth-github'
 gem 'omniauth-facebook'
+gem 'omniauth-saml'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -45,5 +47,8 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+# Use byebug
+gem 'byebug', group: [:development, :test]
+
+# Use awesome print as text formatter in rails c
+gem 'awesome_print', group: [:development, :test]

@@ -229,6 +229,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :github, '9df3ed1f1efdf8d04529', '6611795d7d2f9886ec3ee6680f156b4f28598bd0'
   config.omniauth :facebook, '277426689681006', '05e85396bd3998d729eaeb4f0aaed022'
+  config.omniauth :saml, idp_cert_fingerprint: '18:06:C0:7D:5B:D2:15:C4:4C:9F:9C:F2:9B:B1:BA:19:4E:91:AE:82', idp_sso_target_url: 'https://capriza.github.io/samling/samling.html'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
