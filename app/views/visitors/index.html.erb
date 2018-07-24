@@ -1,7 +1,7 @@
 <ul>
 <% @visitors.each do |visitor| %>
   <li>
-    <%= link_to visitor.email, "#" %>
+      <%= link_to visitor.email, "#" %> &nbsp; <%= link_to "DELETE", visitor_path(visitor), method: :delete %>
   </li>
 <% end %>
 <ul>
