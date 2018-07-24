@@ -1,0 +1,7 @@
+<ul>
+<% @visitors.each do |visitor| %>
+  <li>
+    <%= link_to visitor.email, "#" %>
+  </li>
+<% end %>
+<ul>

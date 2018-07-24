@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
 gem 'omniauth-github'
+gem 'omniauth-facebook'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -45,4 +46,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]
