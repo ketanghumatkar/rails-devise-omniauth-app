@@ -91,6 +91,9 @@ GEM
     omniauth-saml (1.4.2)
       omniauth (~> 1.1)
       ruby-saml (~> 1.1, >= 1.1.1)
+    omniauth-wsfed (0.3.3.pre.beta)
+      omniauth (~> 1.2, >= 1.2.2)
+      xmlcanonicalizer (~> 0.1, >= 0.1.2)
     orm_adapter (0.5.0)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -147,6 +150,7 @@ GEM
       json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
+    xmlcanonicalizer (0.1.2)
 
 PLATFORMS
   ruby
@@ -161,6 +165,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-github
   omniauth-saml
+  omniauth-wsfed (~> 0.3.3.pre.beta)
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc

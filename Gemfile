@@ -31,7 +31,7 @@ gem 'devise'
 gem 'omniauth-github'
 gem 'omniauth-facebook'
 gem 'omniauth-saml'
-
+gem 'omniauth-wsfed', '~> 0.3.3.pre.beta'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
