@@ -227,20 +227,20 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :github, '9df3ed1f1efdf8d04529', '6611795d7d2f9886ec3ee6680f156b4f28598bd0'
-  config.omniauth :facebook, '277426689681006', '05e85396bd3998d729eaeb4f0aaed022'
-  config.omniauth :saml, idp_cert_fingerprint: 'C4:76:EA:A6:D2:A8:04:97:CB:E5:F5:AA:59:F5:F5:6E:FD:98:6A:5F',
-                         idp_sso_target_url: 'https://login.microsoftonline.com/3c337f97-43bf-410b-934d-b3ddbc071c5b/saml2',
+  config.omniauth :github, 'APP_KEY', 'APP_SECRET'
+  config.omniauth :facebook, 'APP_KEY', 'APP_SECRET'
+  config.omniauth :saml, idp_cert_fingerprint: 'C4:76:EA...98:6A:5F',
+                         idp_sso_target_url: 'https://login.microsoftonline.com/:client_id/saml2',
                          assertion_consumer_service_url: "https://localhost:3000/users/auth/saml/callback",
                          issuer: "https://localhost:3000",
                          name_identifier_format: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
 
   # config.omniauth :wsfed, issuer: 'https://localhost:3000',
-  #                         realm: 'https://yogkbendkegmail.onmicrosoft.com/ce8084da-c08a-4d7f-8dc5-f24908780c61',
+  #                         realm: 'https://sample.onmicrosoft.com/:client_id',
   #                         reply: 'http://localhost:3000/users/auth/wsfed/callback',
   #                         id_claim: 'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent',
-  #                         idp_cert_fingerprint: '4E:2A:06:CB:0C:25:86:F7:45:6D:76:7C:D7:75:A9:3D:AC:BD:02:55',
-  #                         idp_cert: 'MIIDBTCCAe2gAwIBAgIQYbgOJ8Uror1IlEvjsPi7jzANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDEyJhY2NvdW50cy5hY2Nlc3Njb250cm9sLndpbmRvd3MubmV0MB4XDTE4MDUxMTAwMDAwMFoXDTIwMDUxMTAwMDAwMFowLTErMCkGA1UEAxMiYWNjb3VudHMuYWNjZXNzY29udHJvbC53aW5kb3dzLm5ldDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALz96rUhsQfjAe0JZni7J5oLq4t/3m27HwXSjZOVM+mDfNCQzTDvKvpmx6/VBmB+SAd/cMc/GfntWl/DQeb08Hgkd7UGzbV1rUOsxH15mpwFABjQA5iFTd5i8BqMVz6stNVTP/crS06cKMAom1VqAoouZvxi7VY8qKFwWTBo8IS0ps32dIqY5Xp+6vNy8WQGGEnVf5MxxrSShxw6zTMMyXzoJPrrxe9y0luJF+c5rRy4ET2PhpL6rtoNhJ+EoXaV0zdIjVeq2ecSMobbP9PBtqBdkQSRIo4RY+zQZMTHF9zUu2SpCKkb8kq4hIZkpGbEkahoPIJ/GlQtg6lbsEYopi8CAwEAAaMhMB8wHQYDVR0OBBYEFIwrggJsAwub9JGBkbpcqnwD052FMA0GCSqGSIb3DQEBCwUAA4IBAQAN9cz2xcZe76AxjQAOgaGGMrpowwmDht5ssS4SrwoL1gDvEP/pn4tTdYpPTP18EC7YMg925nbLmqNM0VJvO7AJr1I6G/HbmrCyyhvmZYZnAJVwqFwsPK2lJ1K0sjriL/g1UI0BofFsWBxBMqaDOp7+PTz27Ssn7UOo5ghKCMWaijNl+nsjfDtIJhKjISW8KduL5DO7Q+9R5ec/AyjheOCTmEij8V6nVBX642z9ujU9xOUaZZux9usuEHDhf7kqnOw/9/WyKluHoLhxFkTCV2Y12HabDtKo5iOP+ukjzNzZkRoo74Fi0tFB+nB24fdrd2TrxaGau/KXRu5QbXataOjz',
+  #                         idp_cert_fingerprint: '4E:2A:06:CB:0C:...:BD:02:55',
+  #                         idp_cert: 'MIIDBTCCAe2.....YbgOJ8Uror1',
   #                         saml_version: "2"
 
   # ==> Warden configuration
